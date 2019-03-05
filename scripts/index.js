@@ -190,3 +190,10 @@ function range(min, max) {
 
 console.log(strMultiply('abc', 5));
 
+// Sort an array
+// Given an array of strings such as the array of names given in one of the "Good Job" problem, sort them by alphabetically order.
+
+function sorted(name) {
+    return name.sort();
+}
+console.log(sorted(people))
