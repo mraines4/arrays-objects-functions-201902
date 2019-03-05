@@ -64,4 +64,15 @@ function coldCities(place) {
     });
     return coldName;
 }
-console.log(coldCities(cities))
+console.log(coldCities(cities));
+
+// Cities 2
+// Write a function which takes an array of city objects like the above problem as input and returns an array of the cities names.
+
+function cityNames(place) {
+    let name = place.map(function (each) {
+        return each.name;
+    });
+    return name;
+}
+console.log(cityNames(cities));
