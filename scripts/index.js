@@ -165,3 +165,28 @@ function callNTimes(time, fun) {
 }
 
 callNTimes(5, helloWorld);
+
+// Str Multiply
+// Write a strMultiply function which takes two arguments:
+// str - the string to multiply
+// times - number of times to multiply
+// You may not use the native repeat method that strings provide. But you can use the range function defined below.
+
+function strMultiply(str, times) {
+    let sentence = '';
+    range(0, times).forEach(function () {
+        return sentence += str;
+    })
+    return sentence;
+}
+
+function range(min, max) {
+    var arr = [];
+    for (var i = min; i < max; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+console.log(strMultiply('abc', 5));
+
