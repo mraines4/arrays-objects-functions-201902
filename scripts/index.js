@@ -197,3 +197,14 @@ function sorted(name) {
     return name.sort();
 }
 console.log(sorted(people))
+
+// Sort an array, 2
+// Sort the same array, but not by alphabetically order, but by how long each name is, shortest name first.
+
+function shortestFirst(name) {
+    let shortToLong = name.sort(function (a, b) {
+        return a.length - b.length;
+    });
+    return shortToLong;
+}
+console.log(shortestFirst(people))
