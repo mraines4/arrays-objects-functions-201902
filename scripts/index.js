@@ -4,10 +4,9 @@
 // Write a function which takes an array of numbers as input and returns a new array containing only the positive numbers in the given array.
 
 function positiveNumbers(arr) {
-    const newArray = arr.filter(function (num) {
+    return arr.filter(function (num) {
         return num > 0;
     });
-    return newArray;
 }
 
 console.log(positiveNumbers([1, -4, 5, -6]));
@@ -16,10 +15,9 @@ console.log(positiveNumbers([1, -4, 5, -6]));
 // Write a function which takes an array of numbers as input and returns a new array containing only the even numbers in the given array.
 
 function evenNumbers(arr) {
-    const evenArray = arr.filter(function (num) {
+    return arr.filter(function (num) {
         return (num % 2 === 0);
     });
-    return evenArray;
 }
 
 console.log(evenNumbers([1, 4, 5, 6, 7]));
@@ -28,11 +26,10 @@ console.log(evenNumbers([1, 4, 5, 6, 7]));
 // Write a function which takes an array of numbers as input and returns a new array containing result of squaring each of the numbers in the given array by two. Example: squareTheNumbers([1, 2, 3]) should give [1, 4, 9].
 
 function squaredNumbers(arr) {
-    const squaredArray = arr.map(function (num) {
+    return arr.map(function (num) {
         return num * num
     });
 
-    return squaredArray;
 }
 
 console.log(squaredNumbers([1, 2, 3]));
@@ -59,10 +56,9 @@ function coldCities(place) {
     let coldPlace = cities.filter(function (which) {
         return which.temperature < 70.0;
     });
-    let coldName = coldPlace.map(function (each) {
+    return coldPlace.map(function (each) {
         return each.name;
     });
-    return coldName;
 }
 console.log(coldCities(cities));
 
@@ -70,10 +66,9 @@ console.log(coldCities(cities));
 // Write a function which takes an array of city objects like the above problem as input and returns an array of the cities names.
 
 function cityNames(place) {
-    let name = place.map(function (each) {
+    return place.map(function (each) {
         return each.name;
     });
-    return name;
 }
 console.log(cityNames(cities));
 
@@ -202,10 +197,9 @@ console.log(sorted(people))
 // Sort the same array, but not by alphabetically order, but by how long each name is, shortest name first.
 
 function shortestFirst(name) {
-    let shortToLong = name.sort(function (a, b) {
+    return name.sort(function (a, b) {
         return a.length - b.length;
     });
-    return shortToLong;
 }
 console.log(shortestFirst(people))
 
@@ -228,10 +222,9 @@ var products = [
 ];
 
 function lowestToHighest(arr) {
-    arr.sort(function (a, b) {
+    return arr.sort(function (a, b) {
         return a.price - b.price;
     })
-    return arr;
 }
 
 console.log(lowestToHighest(products));
